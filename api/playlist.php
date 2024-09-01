@@ -3,7 +3,7 @@ header("Cache-Control: max-age=84000, public");
 header('Content-Type: audio/x-mpegurl');
 header('Content-Disposition: attachment; filename="playlist.m3u"');
 function getAllChannelInfo(): array {
-    $json = @file_get_contents('https://babel-in.xyz/babel-b2ef9ad8f0d432962d47009b24dee465/tata/channels');
+    $json = @file_get_contents('https://raw.githubusercontent.com/Skkings001/Taat/main/origin.json');
     if ($json === false) {
         header("HTTP/1.1 500 Internal Server Error");
         exit;
